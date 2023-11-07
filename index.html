@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<title>万影网</title>
+		<meta name="keywords" content="万影网,最新电视剧,电影下载,最新热门电影,热门电视剧,迅雷电影下载" />
+		<meta name="description" content="万影网-每天搜集最新电影在线观看以及迅雷电影下载,每天第一时间更新,放送最新好看的高清免费影视。" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="icon" href="css/img/favicon.ico">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" rev="stylesheet" type="text/css" media="all" href="css/style.css">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		<div style="display: none;">
+			<script type="text/javascript">
+				UA = navigator.userAgent.toLowerCase();
+				url = window.location;
+				url = url.toString();
+				if((UA.indexOf('iphone') != -1 || UA.indexOf('mobile') != -1 || UA.indexOf('android') != -1 || UA.indexOf('ipad') != -1 || UA.indexOf('windows ce') != -1 || UA.indexOf('ipod') != -1) && UA.indexOf('ipod') == -1) {
+					url = url.replace("www.", "m.");
+					Go(url);
+				}
+
+				function Go(url) {
+					window.location = url;
+				}
+			</script>
+		</div>
+		<div style="background:#FFF">
+			<div style="padding:5px 0;border-bottom:1px solid #DDD;">
+				<div class="container">
+					<span class="header-help">欢迎来到万影网，我们因为电影而相聚。</span>
+					<div class="pull-right">
+						<a class="header-help" href="javascript:alert('快捷键Ctrl+D可以快速添加到收藏夹。');">Ctrl+D 加入收藏夹</a> -
+						<a class="header-help" style="color:red;" href="/url.php?url=http://www.sodyy.com&name=万影网">保存到桌面</a> -
+						<a href="http://www.yingtu8.com" target="new" class="header-help" style="color:red;">传送口</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="container" style="padding-top:15px;padding-bottom:15px;padding-right:0;">
+				<div class="row">
+					<div class="col-md-6 col-xs-6">
+						<a class="logo" href="/"></a>
+					</div>
+					<div class="pull-right">
+						<form class="navbar-form" target="_blank" accept-charset="utf-8" action="/index.php?m=vod-search" method="POST" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" id="wd" name="wd" placeholder="电影搜索">
+							</div><button type="submit" class="btn btn-primary">搜索</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<nav class="navbar navbar-static-top navbar-default" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+						<a class="navbar-brand" href="index.html">万影网</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="index.html">首页</a>
+							</li>
+
+							<li>
+								<a target="_self" href="movie.html">电影</a>
+							</li>
+
+							<li>
+								<a target="_self" href="teleplay.html">连续剧</a>
+							</li>
+
+							<li>
+								<a target="_self" href="variety.html">综艺</a>
+							</li>
+
+							<li>
+								<a target="_self" href="animation.html">动漫</a>
+							</li>
+
+							<li>
+								<a target="_self" href="minimovie.html">微电影</a>
+							</li>
+
+							<li>
+								<a target="_self" href="search.html">搜索</a>
+							</li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right">
+							<script>
+								document.write("<script src='/label-userlogin-pg-1.html'></s" + "cript>")
+							</script>
+						</ul>
+					</div>
+					<!--/.nav-collapse -->
+				</div>
+			</nav>
+		</div>
+
+		<div class="container">
+
+			<div style="background:#FFF;padding-top:0px;">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+
+						<li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+
+						<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+
+						<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+
+						<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+
+						<li data-target="#carousel-example-generic" data-slide-to="6"></li>
+
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+
+						<div class="item active">
+							<a target="_blank" href="/vod-detail-id-34192.html"><img width="100%" src="http://i3.letvimg.com/lc05_live/201910/22/23/57/20191022235758-15717598783512qtopwiw9z.jpg" alt="诛仙电影版"></a>
+							<div class="carousel-caption">
+								诛仙电影版
+							</div>
+						</div>
+
+						<div class="item ">
+							<a target="_blank" href="/vod-detail-id-33374.html"><img width="100%" src="http://i2.letvimg.com/lc06_live/201910/19/06/08/20191019060827-15714365076062qtopwiw9z.jpg" alt="全职高手之巅峰荣耀"></a>
+							<div class="carousel-caption">
+								全职高手之巅峰荣耀
+							</div>
+						</div>
+
+						<div class="item ">
+							<a target="_blank" href="/vod-detail-id-32943.html"><img width="100%" src="http://i1.letvimg.com/lc02_live/201910/12/03/39/20191012033954-15708227949752qtopwiw9z.jpg" alt="哪吒之魔童降世"></a>
+							<div class="carousel-caption">
+								哪吒之魔童降世
+							</div>
+						</div>
+
+						<div class="item ">
+							<a target="_blank" href="/vod-detail-id-32572.html"><img width="100%" src="http://i1.letvimg.com/lc07_live/201910/04/04/22/20191004042219-15701341398092qtopwiw9z.jpg" alt="银河补习班"></a>
+							<div class="carousel-caption">
+								银河补习班
+							</div>
+						</div>
+
+						<div class="item ">
+							<a target="_blank" href="/vod-detail-id-32098.html"><img width="100%" src="http://i2.letvimg.com/lc07_live/201909/12/04/46/20190912044624-15682347849792qtopwiw9z.jpg" alt="蜘蛛侠：英雄远征"></a>
+							<div class="carousel-caption">
+								蜘蛛侠：英雄远征
+							</div>
+						</div>
+
+						<div class="item ">
+							<a target="_blank" href="/vod-detail-id-31070.html"><img width="100%" src="http://i2.letvimg.com/lc05_live/201907/10/04/45/20190710044507-15627051074632qtopwiw9z.jpg" alt="疾速备战"></a>
+							<div class="carousel-caption">
+								疾速备战
+							</div>
+						</div>
+
+					</div>
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">上一张</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">下一张</span>
+					</a>
+				</div>
+				<div class="row" style="padding:0 7px;">
+					<div class="col-md-12 movie-item-out">
+						<h3 style="padding-left:10px;border-left:8px solid #00A6DE;">热播电影：</h3>
+					</div>
+
+					<div class="col-md-2 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="诛仙电影版" target="_blank" href="/vod-detail-id-34192.html">
+								<img class="indexhot" title="诛仙电影版" alt="诛仙电影版" src="https://cbu01.alicdn.com/img/ibank/2019/638/109/12048901836.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="诛仙电影版" class="movie-name" href="/vod-detail-id-34192.html">诛仙电影版</a>
+								</div>
+								<td>评分：
+									<a rel="nofollow" class="score" target="_blank"> 5.9 <i class="glyphicon glyphicon-thumbs-up"></i></a>
+								</td>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-2 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="全职高手之巅峰荣耀" target="_blank" href="/vod-detail-id-33374.html">
+								<img class="indexhot" title="全职高手之巅峰荣耀" alt="全职高手之巅峰荣耀" src="https://cbu01.alicdn.com/img/ibank/2019/492/626/11798626294.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="全职高手之巅峰荣耀" class="movie-name" href="/vod-detail-id-33374.html">全职高手之巅峰荣耀</a>
+								</div>
+								<td>评分：
+									<a rel="nofollow" class="score" target="_blank"> 5.7 <i class="glyphicon glyphicon-thumbs-up"></i></a>
+								</td>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-2 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="罗小黑战记" target="_blank" href="/vod-detail-id-34011.html">
+								<img class="indexhot" title="罗小黑战记" alt="罗小黑战记" src="https://cbu01.alicdn.com/img/ibank/2019/321/290/12002092123.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="罗小黑战记" class="movie-name" href="/vod-detail-id-34011.html">罗小黑战记</a>
+								</div>
+								<td>评分：
+									<a rel="nofollow" class="score" target="_blank"> 8.4 <i class="glyphicon glyphicon-thumbs-up"></i></a>
+								</td>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-2 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="哪吒之魔童降世" target="_blank" href="/vod-detail-id-32943.html">
+								<img class="indexhot" title="哪吒之魔童降世" alt="哪吒之魔童降世" src="https://cbu01.alicdn.com/img/ibank/2019/524/878/11584878425.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="哪吒之魔童降世" class="movie-name" href="/vod-detail-id-32943.html">哪吒之魔童降世</a>
+								</div>
+								<td>评分：
+									<a rel="nofollow" class="score" target="_blank"> 8.7 <i class="glyphicon glyphicon-thumbs-up"></i></a>
+								</td>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-2 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="小丑回魂2" target="_blank" href="/vod-detail-id-35127.html">
+								<img class="indexhot" title="小丑回魂2" alt="小丑回魂2" src="https://cbu01.alicdn.com/img/ibank/2019/044/159/12268951440.jpg">
+								<button class="hdtag">HD韩版</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="小丑回魂2" class="movie-name" href="/vod-detail-id-35127.html">小丑回魂2</a>
+								</div>
+								<td>评分：
+									<a rel="nofollow" class="score" target="_blank"> 6.6 <i class="glyphicon glyphicon-thumbs-up"></i></a>
+								</td>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-2 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="老千3：独眼杰克" target="_blank" href="/vod-detail-id-35274.html">
+								<img class="indexhot" title="老千3：独眼杰克" alt="老千3：独眼杰克" src="https://cbu01.alicdn.com/img/ibank/2019/442/753/12338357244.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="老千3：独眼杰克" class="movie-name" href="/vod-detail-id-35274.html">老千3：独眼杰克</a>
+								</div>
+								<td>评分：
+									<a rel="nofollow" class="score" target="_blank"> 6.6 <i class="glyphicon glyphicon-thumbs-up"></i></a>
+								</td>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="row" style="padding:0 7px;">
+					<div class="col-md-12 movie-item-out">
+						<h3 style="padding-left:10px;border-left:8px solid #00A6DE;">最新电影：</h3>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="庞蒂雅娜的复仇" target="_blank" href="/vod-detail-id-35823.html">
+								<img alt="庞蒂雅娜的复仇" title="庞蒂雅娜的复仇" class="hotimg" src="https://cbu01.alicdn.com/img/ibank/2019/465/429/12491924564.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="庞蒂雅娜的复仇" href="/vod-detail-id-35823.html" class="movie-name">庞蒂雅娜的复仇</a><span class="otherinfo"> - 0.0</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-9-pg-1.html" class="movietype">恐怖片</a>
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%83%8A%E6%82%9A'>惊悚</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-2019'>2019</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A%E7%94%B5%E5%BD%B1'>马来西亚电影</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A'>马来西亚</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%81%90%E6%80%96'>恐怖</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%94%AF%E7%BE%8E'>唯美</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%90%B8%E8%A1%80%E9%AC%BC'>吸血鬼</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-Horror'>Horror</a>&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="惊悚诡计" target="_blank" href="/vod-detail-id-35605.html">
+								<img alt="惊悚诡计" title="惊悚诡计" class="hotimg" src="https://cbu01.alicdn.com/img/ibank/2019/925/989/12392989529.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="惊悚诡计" href="/vod-detail-id-35605.html" class="movie-name">惊悚诡计</a><span class="otherinfo"> - 0.0</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-9-pg-1.html" class="movietype">恐怖片</a>
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%BE%8E%E5%9B%BD'>美国</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%83%8A%E6%82%9A'>惊悚</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%81%90%E6%80%96'>恐怖</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-2019'>2019</a>&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="杀戮部队" target="_blank" href="/vod-detail-id-35811.html">
+								<img alt="杀戮部队" title="杀戮部队" class="hotimg" src="https://cbu01.alicdn.com/img/ibank/2019/182/050/12452050281.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="杀戮部队" href="/vod-detail-id-35811.html" class="movie-name">杀戮部队</a><span class="otherinfo"> - 0.0</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-5-pg-1.html" class="movietype">动作片</a>
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%88%98%E4%BA%89'>战争</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%BE%8E%E5%9B%BD'>美国</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-AlexanderSkarsg%C3%A5rd'>AlexanderSkarsgård</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%BE%8E%E5%9B%BD%E7%94%B5%E5%BD%B1'>美国电影</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-2019'>2019</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%8A%A8%E4%BD%9C'>动作</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%C2%B7%E6%96%AF%E5%8D%A1%E6%96%AF%E5%8A%A0%E5%BE%B7'>亚历山大·斯卡斯加德</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%94%B5%E5%BD%B1'>电影</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%89%A7%E6%83%85'>剧情</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%9C%9F%E5%AE%9E%E4%BA%8B%E4%BB%B6%E6%94%B9%E7%BC%96'>真实事件改编</a>&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="鲨海47：猛鲨出笼" target="_blank" href="/vod-detail-id-35822.html">
+								<img alt="鲨海47：猛鲨出笼" title="鲨海47：猛鲨出笼" class="hotimg" src="https://cbu01.alicdn.com/img/ibank/2019/412/513/12454315214.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="鲨海47：猛鲨出笼" href="/vod-detail-id-35822.html" class="movie-name">鲨海47：猛鲨出笼</a><span class="otherinfo"> - 6.2</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-9-pg-1.html" class="movietype">恐怖片</a>
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%83%8A%E6%82%9A'>惊悚</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%BE%8E%E5%9B%BD'>美国</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%94%B5%E5%BD%B1'>电影</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%B7%B1%E6%B5%B7'>深海</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-2019'>2019</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%81%90%E6%80%96'>恐怖</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E4%B8%80%E6%B5%81'>一流</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E3%80%90%E5%89%A7%E6%9C%AC%E3%80%91'>【剧本】</a>&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="响尾蛇之吻" target="_blank" href="/vod-detail-id-35821.html">
+								<img alt="响尾蛇之吻" title="响尾蛇之吻" class="hotimg" src="https://cbu01.alicdn.com/img/ibank/2019/882/003/12454300288.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="响尾蛇之吻" href="/vod-detail-id-35821.html" class="movie-name">响尾蛇之吻</a><span class="otherinfo"> - 0.0</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-9-pg-1.html" class="movietype">恐怖片</a>
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%83%8A%E6%82%9A'>惊悚</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%82%AC%E7%96%91'>悬疑</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%BE%8E%E5%9B%BD'>美国</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%8A%AF%E7%BD%AA'>犯罪</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%89%A7%E6%83%85'>剧情</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%BE%8E%E5%9B%BD%E7%94%B5%E5%BD%B1'>美国电影</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%8D%A1%E9%97%A8%C2%B7%E8%89%BE%E4%B9%94%E6%88%88'>卡门·艾乔戈</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-2019'>2019</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%BF%83%E7%90%86'>心理</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-Horror%26Thriller%26Cult'>Horror&Thriller&Cult</a>&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="我叫多麦特" target="_blank" href="/vod-detail-id-35820.html">
+								<img alt="我叫多麦特" title="我叫多麦特" class="hotimg" src="https://cbu01.alicdn.com/img/ibank/2019/466/558/12491855664.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="我叫多麦特" href="/vod-detail-id-35820.html" class="movie-name">我叫多麦特</a><span class="otherinfo"> - 0.0</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-10-pg-1.html" class="movietype">剧情片</a>
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E4%BC%A0%E8%AE%B0'>传记</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-2019'>2019</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E9%BB%91%E4%BA%BA'>黑人</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%BE%8E%E5%9B%BD'>美国</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%89%A7%E6%83%85'>剧情</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E9%9F%A6%E6%96%AF%E5%88%A9%C2%B7%E6%96%AF%E5%A5%88%E6%99%AE%E6%96%AF'>韦斯利·斯奈普斯</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E8%89%BE%E8%BF%AA%C2%B7%E5%A2%A8%E8%8F%B2'>艾迪·墨菲</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%BE%8E%E5%9B%BD%E7%94%B5%E5%BD%B1'>美国电影</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%9C%B0%E5%8C%BA_%E7%BE%8E%E5%9B%BD'>地区_美国</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-TV-NETFLIX'>TV-NETFLIX</a>&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="在黑暗中讲述的恐怖故事" target="_blank" href="/vod-detail-id-35253.html">
+								<img alt="在黑暗中讲述的恐怖故事" title="在黑暗中讲述的恐怖故事" class="hotimg" src="https://cbu01.alicdn.com/img/ibank/2019/749/324/12335423947.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="在黑暗中讲述的恐怖故事" href="/vod-detail-id-35253.html" class="movie-name">在黑暗中讲述的恐怖故事</a><span class="otherinfo"> - 6.2</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-9-pg-1.html" class="movietype">恐怖片</a>
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%81%90%E6%80%96'>恐怖</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%83%8A%E6%82%9A'>惊悚</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%BE%8E%E5%9B%BD'>美国</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-2019'>2019</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%81%B5%E5%BC%82'>灵异</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%94%B9%E7%BC%96'>改编</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%A7%91%E5%B9%BB'>科幻</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-2018'>2018</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%9C%A8%E9%BB%91%E6%9A%97%E4%B8%AD%E8%AE%B2%E8%BF%B0%E7%9A%84%E6%81%90%E6%80%96%E6%95%85%E4%BA%8B'>在黑暗中讲述的恐怖故事</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%B0%8F%E8%AF%B4%E6%94%B9%E7%BC%96'>小说改编</a>&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="狂赌之渊电影版" target="_blank" href="/vod-detail-id-35557.html">
+								<img alt="狂赌之渊电影版" title="狂赌之渊电影版" class="hotimg" src="https://cbu01.alicdn.com/img/ibank/2019/600/084/12345480006.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="狂赌之渊电影版" href="/vod-detail-id-35557.html" class="movie-name">狂赌之渊电影版</a><span class="otherinfo"> - 7.2</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-10-pg-1.html" class="movietype">剧情片</a>
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%97%A5%E6%9C%AC%E7%94%B5%E5%BD%B1'>日本电影</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%BB%A8%E8%BE%B9%E7%BE%8E%E6%B3%A2'>滨边美波</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%97%A5%E6%9C%AC'>日本</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%BC%AB%E7%94%BB%E6%94%B9%E7%BC%96'>漫画改编</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-2019'>2019</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%94%B5%E5%BD%B1'>电影</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%BC%AB%E6%94%B9'>漫改</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E9%AB%98%E6%9D%89%E7%9C%9F%E5%AE%99'>高杉真宙</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%A3%AE%E5%B7%9D%E8%91%B5'>森川葵</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%B1%A0%E7%94%B0%E4%BE%9D%E6%9D%A5%E6%B2%99'>池田依来沙</a>&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="功夫小镇" target="_blank" href="/vod-detail-id-35817.html">
+								<img alt="功夫小镇" title="功夫小镇" class="hotimg" src="https://cbu01.alicdn.com/img/ibank/2019/850/213/12491312058.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="功夫小镇" href="/vod-detail-id-35817.html" class="movie-name">功夫小镇</a><span class="otherinfo"> - 0.0</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-18-pg-1.html" class="movietype">微电影</a>
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%8A%9F%E5%A4%AB'>功夫</a>&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="维京小海盗" target="_blank" href="/vod-detail-id-17854.html">
+								<img alt="维京小海盗" title="维京小海盗" class="hotimg" src="http://tva3.sinaimg.cn/large/006scYDsgy1fkvz9j8vm4j308i0c0mxs.jpg">
+								<button class="hdtag">BD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="维京小海盗" href="/vod-detail-id-17854.html" class="movie-name">维京小海盗</a><span class="otherinfo"> - 7.3</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-6-pg-1.html" class="movietype">喜剧片</a>
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%88%B4%E7%BB%B4'>戴维</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%B0%8F%E7%BB%B4%E4%BA%AC%E4%BA%BA'>小维京人</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E4%B8%8D%E5%8F%AF%E8%83%BD%E7%9A%84%E4%BB%BB%E5%8A%A1'>不可能的任务</a>&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="虎胆龙威4" target="_blank" href="/vod-detail-id-23871.html">
+								<img alt="虎胆龙威4" title="虎胆龙威4" class="hotimg" src="http://tva3.sinaimg.cn/mw690/005BjCpAgw1f1s971z2mbj30b10go41e.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="虎胆龙威4" href="/vod-detail-id-23871.html" class="movie-name">虎胆龙威4</a><span class="otherinfo"> - 7.6</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-5-pg-1.html" class="movietype">动作片</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="冒牌监护人之寻宝闹翻天" target="_blank" href="/vod-detail-id-20529.html">
+								<img alt="冒牌监护人之寻宝闹翻天" title="冒牌监护人之寻宝闹翻天" class="hotimg" src="https://tva3.sinaimg.cn/mw1024/006aonmngy1fogm37od9lj30u015zwmx.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="冒牌监护人之寻宝闹翻天" href="/vod-detail-id-20529.html" class="movie-name">冒牌监护人之寻宝闹翻天</a><span class="otherinfo"> - 0.0</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-6-pg-1.html" class="movietype">喜剧片</a>
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%B4%AA%E5%89%91%E6%B6%9B'>洪剑涛</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%A8%B1%E5%AD%90'>樱子</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%BD%AD%E6%B3%A2'>彭波</a>&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="细思极恐" target="_blank" href="/vod-detail-id-24724.html">
+								<img alt="细思极恐" title="细思极恐" class="hotimg" src="https://tva3.sinaimg.cn/mw690/0060lm7Tly1ftzeewn56ij30u01600xx.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="细思极恐" href="/vod-detail-id-24724.html" class="movie-name">细思极恐</a><span class="otherinfo"> - 0.0</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-9-pg-1.html" class="movietype">恐怖片</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="厉害了，我的国" target="_blank" href="/vod-detail-id-21772.html">
+								<img alt="厉害了，我的国" title="厉害了，我的国" class="hotimg" src="https://tva3.sinaimg.cn/mw1024/006aonmngy1fq8ux8eb69j30u01810wz.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="厉害了，我的国" href="/vod-detail-id-21772.html" class="movie-name">厉害了，我的国</a><span class="otherinfo"> - 0.0</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-10-pg-1.html" class="movietype">剧情片</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="拳霸女团" target="_blank" href="/vod-detail-id-5821.html">
+								<img alt="拳霸女团" title="拳霸女团" class="hotimg" src="http://tva3.sinaimg.cn/mw690/006aonmngw1fatsbf6jjyj30bp0gognn.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="拳霸女团" href="/vod-detail-id-5821.html" class="movie-name">拳霸女团</a><span class="otherinfo"> - 0.0</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-18-pg-1.html" class="movietype">微电影</a>
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E4%B8%AD%E5%9B%BD%E6%96%87%E5%8C%96'>中国文化</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-Edison'>Edison</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E8%91%A3%E4%BA%8B%E9%95%BF'>董事长</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%BB%83%E4%B9%A0%E7%94%9F'>练习生</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E9%9F%A9%E5%9B%BD'>韩国</a>&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="危险关系1997" target="_blank" href="/vod-detail-id-35816.html">
+								<img alt="危险关系1997" title="危险关系1997" class="hotimg" src="https://cbu01.alicdn.com/img/ibank/2019/961/346/12453643169.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="危险关系1997" href="/vod-detail-id-35816.html" class="movie-name">危险关系1997</a><span class="otherinfo"> - 7.4</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-10-pg-1.html" class="movietype">剧情片</a>
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%BE%8E%E5%9B%BD'>美国</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%8A%AF%E7%BD%AA'>犯罪</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%89%A7%E6%83%85'>剧情</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-1997'>1997</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E9%BB%91%E8%89%B2%E5%B9%BD%E9%BB%98'>黑色幽默</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%9A%B4%E5%8A%9B'>暴力</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%82%AC%E7%96%91'>悬疑</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E9%BB%91%E8%89%B2'>黑色</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-tarantino'>tarantino</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E9%BB%91%E5%B8%AE'>黑帮</a>&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="诛仙电影版" target="_blank" href="/vod-detail-id-34192.html">
+								<img alt="诛仙电影版" title="诛仙电影版" class="hotimg" src="https://cbu01.alicdn.com/img/ibank/2019/638/109/12048901836.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="诛仙电影版" href="/vod-detail-id-34192.html" class="movie-name">诛仙电影版</a><span class="otherinfo"> - 5.9</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-7-pg-1.html" class="movietype">爱情片</a>
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%B0%91%E5%B9%B4'>少年</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%A2%A7%E7%91%B6'>碧瑶</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E4%BA%BA%E7%94%9F%E8%BD%A8%E8%BF%B9'>人生轨迹</a>&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="旧爱重拍" target="_blank" href="/vod-detail-id-26973.html">
+								<img alt="旧爱重拍" title="旧爱重拍" class="hotimg" src="https://tva3.sinaimg.cn/large/0078bOVFgy1fx17eixa1jj30u012jwi3.jpg">
+								<button class="hdtag">HD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="旧爱重拍" href="/vod-detail-id-26973.html" class="movie-name">旧爱重拍</a><span class="otherinfo"> - 0.0</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-6-pg-1.html" class="movietype">喜剧片</a>
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%88%B1%E6%83%85'>爱情</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%88%B1%E6%83%85%E7%9A%84%E6%BB%8B%E5%91%B3'>爱情的滋味</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%86%8D%E6%AC%A1%E7%9B%B8%E9%81%87'>再次相遇</a>&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="爱哭鬼皮埃罗的婚礼" target="_blank" href="/vod-detail-id-15189.html">
+								<img alt="爱哭鬼皮埃罗的婚礼" title="爱哭鬼皮埃罗的婚礼" class="hotimg" src="https://tva3.sinaimg.cn/large/005BYqpggy1fyqkrqfezdj30u016hgq1.jpg">
+								<button class="hdtag">BD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="爱哭鬼皮埃罗的婚礼" href="/vod-detail-id-15189.html" class="movie-name">爱哭鬼皮埃罗的婚礼</a><span class="otherinfo"> - 6.2</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-6-pg-1.html" class="movietype">喜剧片</a>
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%9A%AE%E5%9F%83%E7%BD%97'>皮埃罗</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%BF%97%E7%94%B0%E6%9C%AA%E6%9D%A5'>志田未来</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E7%88%B1%E5%93%AD%E9%AC%BC%E7%9A%AE%E5%9F%83%E7%BD%97%E7%9A%84%E5%A9%9A%E7%A4%BC'>爱哭鬼皮埃罗的婚礼</a>&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 movie-item-out">
+						<div class="movie-item">
+							<a style="position:relative;display:block;" title="异能机友之东京龙珠" target="_blank" href="/vod-detail-id-4720.html">
+								<img alt="异能机友之东京龙珠" title="异能机友之东京龙珠" class="hotimg" src="https://cbu01.alicdn.com/img/ibank/2019/180/062/11807260081.jpg">
+								<button class="hdtag">BD高清</button>
+							</a>
+							<div class="meta">
+								<div style="width:100%;overflow:hidden;height:20px;">
+									<a target="_blank" title="异能机友之东京龙珠" href="/vod-detail-id-4720.html" class="movie-name">异能机友之东京龙珠</a><span class="otherinfo"> - 0.0</span></div>
+								<div class="otherinfo">类型：
+									<a target="_blank" href="/vod-type-id-18-pg-1.html" class="movietype">微电影</a>
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E5%BC%A0%E6%A4%8D%E7%BB%BF'>张植绿</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%9D%8E%E5%BF%97%E6%B5%A9'>李志浩</a>&nbsp;
+									<a target='_blank' href='/index.php?m=vod-search-tag-%E6%89%8B%E6%9C%BA%E4%BA%BA'>手机人</a>&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div>
+					<a target="_blank" class="btn btn-primary btn-block" href="/vod-type-id-1-pg-1.html"><i class="glyphicon glyphicon-fire"> </i> 更多热门影片 &raquo; </a>
+				</div>
+
+				<div class="row" style="padding:0 7px;">
+					<div class="col-md-12 movie-item-out">
+						<h4 style="padding-left:10px;border-left:8px solid #00A6DE;">友情链接：</h4>
+					</div>
+					<div style="padding: 20px;">
+
+						<a target="_blank" href="http://www.sodyy.com/vod-type-id-1-pg-1.html">最新电影</a>&nbsp;&nbsp;
+
+						<a target="_blank" href="http://www.sodyy.com/vod-list-id-18-pg-1-order--by--class--year--letter--area--lang-.html">微电影</a>&nbsp;&nbsp;
+
+						<a target="_blank" href="http://www.yingtu8.com/">新万影网</a>&nbsp;&nbsp;
+
+						<a target="_blank" href="http://www.sodyy.com/index.html">万影网</a>&nbsp;&nbsp;
+
+					</div>
+				</div>
+			</div>
+			<!-- end container -->
+		</div>
+		<footer class="footer">
+			<p>免责声明：影视均来源于互联网，视频版权属于原有版权商。<br/>本网站仅提供WEB页面服务，并不提供影片资源存储，也不参与录制、上传，<br/>若本站收录的节目无意侵犯了贵司版权，请给网页底部邮箱地址来信，我们会及时处理和回复，谢谢！</p>
+			<em><a href="/">♥万影网</a>  - Copyright &copy; 2018-2019 - <script src="js/tj.js"></script></em>
+			<p><img class="png-img" src="/email.gif" alt="" </p>
+		</footer>
+		</div>
+		<!-- end container -->
+		<script type="text/JavaScript">
+			function SetCookie(name,value) { var Days = 1; var exp = new Date(); exp.setTime(exp.getTime() + Days*24*60*60*1000); document.cookie = name + "="+ escape (value) + ";expires=" +exp.toGMTString()+";path=/;"; } function GetCookie(name) { var arr = document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)")); if(arr != null) return unescape(arr[2]); return null; }
+		</script>
+		<script>
+			(function() {
+				var bp = document.createElement('script');
+				var curProtocol = window.location.protocol.split(':')[0];
+				if(curProtocol === 'https') {
+					bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+				} else {
+					bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+				}
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(bp, s);
+			})();
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,38 @@
+/* define bootstrap 5 columns */
+        .col-xs-1-5,
+        .col-sm-1-5,
+        .col-md-1-5,
+        .col-lg-1-5 {
+            position: relative;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+ 
+        .col-xs-1-5 {
+            width: 20%;
+            float: left;
+        }
+ 
+        @media (min-width: 768px) {
+        .col-sm-1-5 {
+                width: 20%;
+                float: left;
+            }
+        }
+        @media (min-width: 992px) {
+            .col-md-1-5 {
+                width: 20%;
+                float: left;
+            }
+        }
+        @media (min-width: 1200px) {
+            .col-lg-1-5 {
+                width: 20%;
+                float: left;
+            }
+        }
+.typeSearList{border-bottom: 1px dashed #e5e5e5; overflow: hidden; line-height: 30px; padding:5px 0;margin-bottom: 5px; height:29px}
+.typeSearList dt{float:left;margin-right:15px; font-size:14px; height:22px; line-height:22px; margin-left:10px;_display:inline}
+.typeSearList dd a{color:#333;float:left; padding:0 5px 0 5px; height:26px; line-height:26px; margin-right:5px}
+.typeSearList dd a:hover,.typeSearList dd a.on{color: #fff; background: #337ab7; }		
