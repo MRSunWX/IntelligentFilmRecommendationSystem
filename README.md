@@ -2,6 +2,8 @@
 
 ## 项目简介：
 
+### venv文件夹里面文件太多了上传不上来，如果需要的话可以去这个项目主页下载。https://github.com/ZainZhao/Personalized-recommend
+
 - [dl_re_web](https://github.com/ZainZhao/Personalized-recommend/tree/master/dl_re_web) :   Web 项目的文件夹
 - [re_sys](https://github.com/ZainZhao/Personalized-recommend/tree/master/re_sys)： Web app
   - [model](https://github.com/ZainZhao/Personalized-recommend/tree/master/re_sys/model)：百度云下载之后，把model放到该文件夹下
