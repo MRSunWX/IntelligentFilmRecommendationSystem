@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>智能电影推荐论坛</title>
+
+  <link href="/static/css/style2.css" rel="stylesheet" media="all">
+  <link href="/static/css/frame.css" rel="stylesheet">
+  <style>
+    table {
+      font-size: 18px;
+      color: #453726;
+      font-family: rubik, arial;
+      background-color: white;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-top-color: rgb(104, 60, 29);
+      border-width: 5px;
+    }
+    td{
+      height: 30px;
+      padding: 5px;
+    }
+    th{
+      height: 30px;
+    }
+    .right_top{
+      text-align: center;
+      width: 110%;
+      font-size: x-large;
+      color: #5a4730;
+      font-weight: bold;
+      background-image: linear-gradient(#5a473082, #FFFFFF);
+      height: 60px;
+    }
+    .background{
+      background-image: url(static/img/background.png);
+      background-repeat: repeat;
+      background-attachment: fixed;
+    }
+    .soft_shadow{
+      background-image: linear-gradient(#5a473082, #FFFFFF);
+    }
+    .top_title{
+      color:#5a4730;
+      font-weight: bold;
+    }
+    p{
+      color:azure;
+      font-weight: bold;
+      margin: 10px;
+    }
+    .block_title{
+      height: 40px;
+      vertical-align: middle;
+    }
+    
+  </style>
+</head>
+
+<body cz-shortcut-listen="true">
+  <script async="" src="/static/js/analytics.js"></script>
+  <script src="/static/js/jquery-latest.min.js"></script>
+  <script src="/static/js/functions.js"></script>
+  <script async="" src="/static/js/native.js"></script>
+
+<div class="background">
+  <div id="header" class="soft_shadow">
+    <div class="wrap">
+      <a href="" id="logo">
+        <img alt="Color Hunt Palettes Logo"
+          src="/static/img/color-hunt-palettes-logo.png"><p class="top_title">智能电影推荐论坛</p>
+      </a>
+      <ol id="breadcrumbs">
+        <li>
+          <a href="index.html">首页</a>
+        </li>
+        <li>
+          <a href=""></a>
+        </li>
+
+      </ol>
+
+  </div>
+  </div>
+
+  <div id="container" class="wrap">
+  <div class="block_title">
+    <p style="font-size: 18px; line-height: 40px; color: white;vertical-align:middle;">热门推荐</p>
+  </div>
+  <div id="top">
+    {% for movie_t in movie_top %}
+
+    <div class="item block shadow" data-order="0" data-id="142173"
+							data-code="c5fad9aceacff77feedb66e4"
+							style="animation-delay: 0ms;">
+							<div class="palette"
+								style="background-image: url({{movie_t.image_url}});">
+								<div class="place c3">
+									<a href={{movie_t.douban_url}}></a>
+								</div>
+								<!-- <div class="place c1"></div> -->
+							</div>
+							<div class="like button like-font">
+                                  
+								<img alt="Color Hunt Palettes Heart Icon"
+									src="/static/img/color-hunt-palettes-icon-heart.png"> <span>{{movie_t.average_rating}}</span>
+                                </a>
+                                  </form>
+							</div>
+							<span class="date">{{movie_t.title}}</span>
+						</div>
+
+    {% endfor %}
+
+  </div>
+
+
+  <div class="block_title">
+    <p style="font-size: 18px; line-height: 40px; color: white;vertical-align:middle;">您选择的电影</p>
+  </div>
+    <div id="feed">
+                    {% for movie in list_dict_choice %}
+                         <div class="item block shadow" data-order="0" data-id="142173"
+							data-code="c5fad9aceacff77feedb66e4"
+							style="animation-delay: 0ms;">
+							<div class="palette"
+								style="background-image: url({{movie.image_url}});">
+								<div class="place c3">
+									<a href={{movie.douban_url}}></a>
+								</div>
+								<!-- <div class="place c1"></div> -->
+							</div>
+							<div class="like button like-font">
+								<img alt="Color Hunt Palettes Heart Icon"
+									src="/static/img/color-hunt-palettes-icon-heart.png"> <span>{{ movie.average_rating}}</span>
+							</div>
+							<span class="date">{{ movie.title}}--{{movie.movie_id}}</span>
+						</div>
+                    {% endfor %}
+    </div>
+
+
+    <div class="block_title">
+      <p style="font-size: 18px; line-height: 40px; color: white;vertical-align:middle;">相似的电影</p>
+    </div>
+    <div id="feed">
+                        {% for movie_0 in list_dict_same %}
+                         <div class="item block shadow" data-order="0" data-id="142173" data-code="c5fad9aceacff77feedb66e4" style="animation-delay: 0ms;"><div class="palette"
+								style="background-image: url({{ movie_0.image_url }});">
+								<div class="place c3">
+									<a href={{movie_0.douban_url}}></a>
+								</div>
+								<!-- <div class="place c1"></div> -->
+							</div>
+
+						 	<div class="like button like-font">
+                                <form action="/recommend" method="get"  id="next_form_{{movie_0.movie_id}}">
+                                 <input type="hidden" name="movie_id" value={{movie_0.movie_id}}>
+								<a onclick="document.getElementById('next_form_{{movie_0.movie_id}}').submit();return false"><img alt="Color Hunt Palettes Heart Icon" src="/static/img/color-hunt-palettes-icon-heart.png"> <span>{{ movie_0.average_rating}}</span>
+                                </a>
+                                </form>
+							</div>
+
+					 <span class="date">{{ movie_0.title}}-{{movie_0.movie_id}}</span>
+
+						</div>
+                        {% endfor %}
+    </div>
+
+
+    <div class="block_title">
+      <p style="font-size: 18px; line-height: 40px; color: white;vertical-align:middle;">看过该电影的用户还喜欢</p>
+    </div>
+    <div id="feed">
+                {% for movie_1 in list_dict_otherlike %}
+
+                         <div class="item block shadow" data-order="0" data-id="142173"
+							data-code="c5fad9aceacff77feedb66e4"
+							style="animation-delay: 0ms;">
+							<div class="palette"
+								style="background-image: url({{movie_1.image_url}});">
+								<div class="place c3">
+									<a href={{movie_1.douban_url}}></a>
+								</div>
+								<!-- <div class="place c1"></div> -->
+							</div>
+							<div class="like button like-font">
+                                  <form action="/recommend" method="get"  id="next_form_2__{{movie_1.movie_id}}">
+                                      <input type="hidden" name="movie_id" value={{movie_1.movie_id}}>
+								<a onclick="document.getElementById('next_form_2__{{movie_1.movie_id}}').submit();return false"><img alt="Color Hunt Palettes Heart Icon"
+									src="/static/img/color-hunt-palettes-icon-heart.png"> <span>{{ movie_1.average_rating}}</span>
+                                </a>
+                                  </form>
+							</div>
+							<span class="date">{{ movie_1.title}}-{{movie_1.movie_id}}</span>
+						</div>
+            {% endfor %}
+
+    </div>
+
+
+
+
+<div id="side">
+			<div id="search" style="margin-top: 40px">
+                <form  action="/recommend" method="get"  id="searchForm">
+					<input type="text" placeholder="Recommend Movies" name="movie_id"
+						value=""> <a onclick="document:searchForm.submit()"><img
+						src="/static/img/color-hunt-palettes-icon-search.png" style="margin-top: 40px"> </a>
+				</form>
+
+			</div>
+			<div id="main" style="margin-top: 40px">
+				<div>
+          <table class="right_top">
+            <tr>
+              <th>排行榜</th>
+            </tr>
+          </table>
+					<table frame="above" width="110%">
+            <tr>
+              <th width="20%">排名</th><th width="60%">影片名</th><th width="20%">评分</th>
+            </tr>
+            <tr>
+              <td>1</td><td>肖申克的救赎</td><td>9.7</td>
+            </tr>
+            <tr>
+              <td>2</td><td>霸王别姬</td><td>9.6</td>
+            </tr>
+            <tr>
+              <td>3</td><td>阿甘正传</td><td>9.5</td>
+            </tr>
+            <tr>
+              <td>4</td><td>泰坦尼克号</td><td>9.4</td>
+            </tr>
+            <tr>
+              <td>5</td><td>这个杀手不太冷</td><td>9.4</td>
+            </tr>
+            <tr>
+              <td>6</td><td>千与千寻</td><td>9.4</td>
+            </tr>
+            <tr>
+              <td>7</td><td>美丽人生</td><td>9.5</td>
+            </tr>
+            <tr>
+              <td>8</td><td>星际穿越</td><td>9.3</td>
+            </tr>
+            <tr>
+              <td>9</td><td>盗梦空间</td><td>9.3</td>
+            </tr>
+            <tr>
+              <td>10</td><td>辛德勒的名单</td><td>9.5</td>
+            </tr>
+          </table>
+				</div>
+
+
+
+			</div>
+		</div>
+
+
+  </div>
+
+</div>
+
+
+
+  <script type="text/javascript">
+    $(function () {
+      current = "palettes";
+      tags = "";
+      select_menu_button(current);
+    });
+
+
+
+  </script>
+
+
+</body>
+
+</html>
