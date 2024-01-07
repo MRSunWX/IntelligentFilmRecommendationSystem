@@ -3,6 +3,8 @@
 ## 项目简介：
 
 ### venv文件夹里面文件太多了上传不上来，如果需要的话可以去这个项目主页下载。https://github.com/ZainZhao/Personalized-recommend
+### 训练好的model文件太大，没办法上传，需要自己在本地训练。
+### templates/index.html和re_sys\recommend\utils.py两个文件有改动！
 
 - [dl_re_web](https://github.com/ZainZhao/Personalized-recommend/tree/master/dl_re_web) :   Web 项目的文件夹
 - [re_sys](https://github.com/ZainZhao/Personalized-recommend/tree/master/re_sys)： Web app
