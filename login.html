@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+
+            font-color:rgb(116,89,61);}
+        .title{
+            color:white;
+            text-align:center;
+            font-family:"Microsoft Yahei";
+            font-size:20px;
+            padding:30px 20px;
+            height:10%;
+            }
+        .login-container{
+            width:650px;
+            height:400px;
+            background-color:white;
+            margin:100px auto;
+            border-radius:5px;
+            box-shadow:3px 3px 3px 3px rgba(0,0,0,.2);
+            box-sizing:border-box;
+            }
+        .left-container{
+            float:left;
+            width:320px;
+            height:400px;
+            border-radius:5px 0 0 5px;
+            background-image:linear-gradient(#5c3c15,white);}
+        .left-img{
+            margin:0 50px 0 50px;
+            height:60%;
+            background-color:pink;
+            position:relative;}
+        .input-container{
+            float:left;
+            width:330px;
+            height:400px;}
+        #top1{
+            font-size:20px;
+            padding:50px 0 0 0;
+            text-align:center;
+            height:10%;
+            margin:0;
+            width:330px;}
+        .link{
+            color:rgb(116,89,61);
+            font-size:0.5rem;
+            text-decoration:none;}
+        {% block ch3 %}
+        .form{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            padding:10px 10px 0;
+            height:40%;
+            text-align:center;}
+        {% endblock %}
+        .input{
+            width:70%;
+            border:1px solid rgba(178,180,164,0.5);
+            padding:8px 10px;
+            margin:10px auto;
+            box-sizing:border-box;
+            font-size:10px;
+            resize:none;
+            color:grey;
+            outline:none;}
+        #forget{
+            position:relative;
+            left:85px;}
+        .btn{
+            background-color:rgb(116,89,61);
+            border:none;
+            color:white;
+            padding:10px 50px;
+            font-size:10px;
+            border-radius:5px;
+            margin:0 15%;
+            width:70%;}
+        #noaccount{
+            font-size:0.6rem;
+            color:grey;
+            text-align:center;
+            margin:10px auto;}
+        #adm{
+            text-align:center;}
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="left-container">
+            <div class="title">智能电影推荐论坛</div>
+            <div class="left-img">
+                {% block ch1 %}
+                <img src={{ left_img }} width="100%" height="100%">
+                {% endblock %}
+            </div>
+        </div>
+        <div class="input-container">
+            {% block ch2 %}
+            <h2 id="top1" style="color:rgb(116,89,61)">登  录</h2>
+            <div id="adm"><a href="login_admin" class="link">管理员登录</a></div>
+
+            <form class="form" action="">
+                <input class="input" type="text" value="手机号/邮箱">
+                <input class="input" type="password" value="密码"><br>
+                <a href="forget" class="link" id="forget" style="margin:0 0 10px 20px;">忘记密码</a>
+                </form>
+            <div class="bottom">
+
+                <input type="submit" class="btn" value="登录">
+            <div id="noaccount">没有账号？ <a class="link" href="register">立即注册</a></div>
+            </div>
+
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>

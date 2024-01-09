@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{%extends "register.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% block ch2 %}
+        <h2 id="top1" style="color:rgb(116,89,61)">忘 记 密 码</h2>
+            <form class="form" action="">
+                <input class="input" type="text" value="手机号/邮箱">
+                <input class="input" type="text" value="验证码">
+                <input class="input" type="text" value="重新设置密码">
+                <input class="input" type="text" value="确认密码">
+                </form>
+                <div id="agree" style="font-size:10px;color:rgb(116,89,61);margin:0 auto;width:70%;"><input type="checkbox" style="left:10px;">我已阅读并同意<a class="link">《服务协议》</a><a class="link">《隐私政策》</a></div>
+                <input type="submit" class="btn" value="确 认">
+            <div id="noaccount">记得密码 <a class="link" href="login">立即登录</a></div>
+{% endblock %}
+</body>
+</html>

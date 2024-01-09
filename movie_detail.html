@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link href="/static/css/star.css">
+  <style>
+    .mainbody{
+      width:100%;
+      height:300px;
+      margin:0;
+      position:static;
+      background-image:linear-gradient(#75695d,white);}
+    .top1{
+      height:100px;
+      width:100%;
+      }
+    .Title{
+      float:left;
+      width:50%;
+      height:100%;
+      position:relative;}
+    .sx{
+      float:left;
+      margin-top:30px;
+      width:1px;
+      height:100px;
+      background:#75695d;
+      margin_left:1000px;
+      position:relative;}
+    .score-progress-bar{
+      width:100px;
+      height:10px;
+      float:left;
+      margin:15px;
+      background-color:white;
+      border:1px outset yellow;
+      border-radius:3px;}
+    .score-progress{
+      width:{{ movie.score }}%;
+      background-color:yellow;
+      height:10px;
+      border:1px none;
+      border-radius:3px;}
+    .navigation{
+      width:20%;
+      float:right;
+      right:30px;
+      margin:5px auto;
+      text-align:center;
+      padding:5px;
+      }
+    .link{
+      color:#32291f;
+      font-size:15px;
+      text-decoration:none;}
+    .middle{
+      height:400px;
+      display:table;
+      padding:80px 110px 0 110px;
+      width:100%;
+      box-sizing:border-box;
+    }
+    .details{
+      float:left;
+      width:50%;
+      height:100%;
+      margin:100px 0 0 0;
+      }
+    .score{
+      float:left;
+      margin:30px;}
+    ul{
+      list-style-type:none;
+      }
+    .detail{
+      margin:5px;}
+    .box{
+      padding:30px 110px;
+      color:#75695d;}
+    .mark{
+      padding:20px 110px;}
+  </style>
+</head>
+<body>
+<script src="/static/js/star.js"></script>
+    <div class="mainbody">
+      <div class="top1">
+        <div class="Title">
+          <h1 style="color:#32291f;margin:40px 30px;font-size:50px;">智能电影推荐论坛   电影详情页</h1>
+        </div>
+        <table class="navigation">
+          <tr>
+            <td><a href="index" class="link">首页</a></td>
+            <td><a href="#" class="link">论坛</a></td>
+            <td><a href="#" class="link">用户A</a></td>
+            <td><img src={{ user.head }} style="height:50px;float:right;"></td>
+            </tr>
+        </table>
+        <br>
+        <h2 style="width:300px;font-size:40px;height:100px;padding:50px 110px;margin:40px 0 0 0;">{{ movie.Mname }}</h2>
+      </div>
+        <div class="middle">
+          <div><img src={{ movie.Image }} style="width:200px;float:left;"></div>
+          <div class="details">
+            <ul>
+              <li class="detail">主演：{{ movie.Actor }}</li>
+              <li class="detail">类型：{{ movie.Type }}</li>
+              <li class="detail">制片国家/地区：{{ movie.Nation }}</li>
+              <li class="detail">上映日期：{{ movie.Date }}</li>
+
+            </ul>
+          </div>
+          <div class="sx"></div>
+          <div class="score">
+            <div style="color:grey;margin:0 10px 10px 5px;float:left;">评 分</div>
+            <div style="font-size:30px;">{{ movie.score }}</div>
+            <div class="score-progress-bar">
+              <div class="score-progress"></div>
+            </div>
+          </div>
+        </div>
+      <div class="mark">
+        评  分<br>
+        <tr class="nav " id="nav">
+          <td class="star1"><a href="#" title="1分"><img src={{ star.no }}></a></td>
+          <td class="star2"><a href="#" title="2分"><img src={{ star.no }}></a></td>
+          <td class="star3"><a href="#" title="3分"><img src={{ star.no }}></a></td>
+          <td class="star4"><a href="#" title="4分"><img src={{ star.no }}></a></td>
+          <td class="star5"><a href="#" title="5分"><img src={{ star.no }}></a></td>
+        </tr>
+      </div>
+      <div class="box">
+        <h2>{{ movie.Mname }}的剧情简介</h2>
+      <div class="line"></div>
+      <div>
+        <p>{{ movie.Sketch }}</p>
+      </div>
+      </div>
+      <div class="box">
+        <h2>{{ movie.Mname }}的短评</h2>
+        <div class="line"></div>
+        <div>
+          <img style="height:30px;" src={{ user.head }}> {{ postcomment.Time }}
+        </div>
+      </div>
+
+    </div>
+
+</body>
+</html>
